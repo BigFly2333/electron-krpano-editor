@@ -1,0 +1,17 @@
+{
+  "name": "electron-krpano-editor",
+  "version": "1.0.0",
+  "description": "krpano editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack:win32": "electron-packager . krpanoEditor --platform=win32 --arch=x64 --app--version 1.0 --electron-version=2.0.3 --out=./out --overwrite --asar --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=out --ignore=dev-settings --prune",
+    "pack:mac": "electron-packager . krpanoEditor --platform=darwin --arch=x64 --app--version 1.0 --electron-version=2.0.3 --out=./out --overwrite --asar --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=out --ignore=dev-settings --prune"
+  },
+  "author": "BigFly2333",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "2.0.3",
+    "electron-packager": "^12.1.0"
+  }
+}
